@@ -6,7 +6,7 @@ class Artist
   
   def initialize(name)
     @name = name 
-    @@all << self
+    save
   end
   
   
@@ -16,6 +16,10 @@ class Artist
   
   def self.destroy_all
     @@all.clear
+  end
+  
+  def save
+    @@all << self
   end
   
 
