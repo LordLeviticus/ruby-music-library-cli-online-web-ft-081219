@@ -24,4 +24,6 @@ class Song
   def self.create(name)
     song = Song.new(name) 
     song
+  end
+  
 end 
